@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.pdf{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+}
+/* ------ main css ---  */
+.heading{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.heading h1{
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+.para-container{
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    width: 550px;
+}
+.para-container svg{
+    width: 35px;
+}
+.para-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+/* ----- image -----  */
+.img-container{
+    width: 100%;
+    height: 25rem;
+    margin-top: 2rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* -------- details ----- */
+.details{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.details-box{
+    width: 220px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.1),-5px -5px 8px rgba(0,0,0,0.1);
+    padding: 2rem 1.6rem;
+}
+.details-box .sub-box{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.sub-box i{
+    width: 40px;
+    height: 40px;
+}
+.sub-box .texts{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.texts h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #bdbdbd;
+}
+.texts h2{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.ot{
+    color: #f2994a;
+}
+/* -------- recipe manu  */
+.recipe-details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.recipe-details h2{
+    font-size: 24px;
+}
+.recipe-details h4{
+    font-size: 18px;
+    font-style: italic;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;   
+}
+ul li{
+    display: grid;
+    grid-template-columns: .3fr 11.7fr;
+    height: auto;
+    gap: .8rem;
+    list-style: none;
+    
+}
+ul li h4{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+li h4 i{
+    font-weight: 520;
+}
+ul li input{
+    width: 35px;
+    height: 30px;
+}
+.instruction{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    gap: 1rem;
+}
+.count-box{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 45px;
+    height: 45px;
+    background: #f2994a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 8px;
+}
+.instructions{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 1.2rem;
+    font-family:'Montserrat', sans-serif ;
+}
+footer a{
+    color: red;
+    font-family:'Montserrat', sans-serif ;
+}
+
+/* -------- media query ----------  */
+@media screen and (max-width:750px) {
+    .container{
+        width: 95%;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .recipe-details{
+        width: 98%;
+    }
+    .details-box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .sub-box{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .para-container{
+        width: auto;
+    }
+}
+/* ---- complete -----  */
